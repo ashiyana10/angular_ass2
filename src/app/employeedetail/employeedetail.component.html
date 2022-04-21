@@ -1,0 +1,9 @@
+<div [style]="{width:'360px'}" styleclass="ul-card-shadow">
+<div>{{ employee.firstname }}{{employee.lastname}}</div>
+<div>Age:{{employee.age}}Years</div>
+<div>{{employee.designation}}</div>
+
+  <button type="button" label="edit" (click)="editEmployee()">Edit</button>
+  <button type="button" label="delete" (click)="deleteEmployee()">Delete</button>
+
+</div>

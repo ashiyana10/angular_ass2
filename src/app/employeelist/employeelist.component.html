@@ -1,0 +1,9 @@
+<!-- pInputText[([(ngModel)]="binding")]="listFilterBy" -->
+
+<button pButton type="button" label="add new" (click)="addEmployee()">Add Employee</button>
+<br>
+<div header="employee management system">
+  <div *ngFor='let employee of filteredList'>
+    <app-employeedetail [employee]='employee' (refreshEmployeeList)="refreshList()"></app-employeedetail>
+  </div>
+</div>
